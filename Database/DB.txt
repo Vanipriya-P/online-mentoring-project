@@ -1,0 +1,79 @@
+
+create database if not exists `onlinementoringsystem`;
+
+USE `onlinementoringsystem`;
+
+
+CREATE TABLE `college` (
+  `cid` varchar(200) DEFAULT NULL,
+  `clgname` varchar(200) DEFAULT NULL,
+  `clgcode` varchar(200) DEFAULT NULL,
+  `clguni` varchar(200) DEFAULT NULL,
+  `clglocation` varchar(200) DEFAULT NULL,
+  `clgbranch` varchar(200) DEFAULT NULL,
+  `clg` varchar(2000) DEFAULT NULL,
+  `uname` varchar(200) DEFAULT NULL,
+  `email` varchar(200) DEFAULT NULL,
+  `msg` varchar(200) DEFAULT NULL
+) ;
+
+
+CREATE TABLE `doubt` (
+  `dbid` varchar(200) DEFAULT NULL,
+  `uname` varchar(200) DEFAULT NULL,
+  `email` varchar(200) DEFAULT NULL,
+  `doubt` varchar(2000) DEFAULT NULL,
+  `msg` varchar(200) DEFAULT NULL
+) ;
+
+
+
+CREATE TABLE `job` (
+  `jbid` varchar(200) DEFAULT NULL,
+  `cmpname` varchar(200) DEFAULT NULL,
+  `cmpcategory` varchar(200) DEFAULT NULL,
+  `cmplocation` varchar(200) DEFAULT NULL,
+  `cmprequired` varchar(200) DEFAULT NULL,
+  `cmpskills` varchar(200) DEFAULT NULL,
+  `job` varchar(2000) DEFAULT NULL,
+  `uname` varchar(200) DEFAULT NULL,
+  `email` varchar(200) DEFAULT NULL,
+  `msg` varchar(200) DEFAULT NULL
+);
+
+
+CREATE TABLE `mregister` (
+  `id` varchar(100) DEFAULT NULL,
+  `uname` varchar(100) DEFAULT NULL,
+  `htno` varchar(100) DEFAULT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `pass` varchar(100) DEFAULT NULL,
+  `phno` varchar(100) DEFAULT NULL,
+  `pic` varchar(100) DEFAULT NULL,
+  `status_r` varchar(100) DEFAULT NULL
+) ;
+
+CREATE TABLE `register` (
+  `id` varchar(100) DEFAULT NULL,
+  `uname` varchar(100) DEFAULT NULL,
+  `htno` varchar(100) DEFAULT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `pass` varchar(100) DEFAULT NULL,
+  `phno` varchar(100) DEFAULT NULL,
+  `pic` varchar(100) DEFAULT NULL,
+  `status_r` varchar(100) DEFAULT NULL
+) ;
+
+
+
+CREATE TABLE `reply` (
+  `rid` varchar(200) DEFAULT NULL,
+  `dbid` varchar(200) DEFAULT NULL,
+  `jemail` varchar(200) DEFAULT NULL,
+  `jdoubt` varchar(2000) DEFAULT NULL,
+  `reply` varchar(2000) DEFAULT NULL,
+  `uname` varchar(200) DEFAULT NULL,
+  `email` varchar(200) DEFAULT NULL,
+  `msg` varchar(200) DEFAULT NULL
+) ;
+
